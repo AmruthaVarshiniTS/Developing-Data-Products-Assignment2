@@ -1,0 +1,42 @@
+---
+title: "Comparing Chick Weights based on the type of Feed"
+author: "Amrutha Varshini"
+date: "June 22, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+In this presentation we shall compare the weight of chicks based on the type of feed they are fed with.
+
+## Different feeds given to the Chicks
+
+- casein
+- horsebean
+- linseed
+- meatmeal
+- soybean
+- sunflower
+
+## Slide with R Output
+
+```{r cars, echo = TRUE, eval=FALSE}
+library(ggplot2)
+library(plotly)
+library(datasets)
+plot_ly(chickwts,y=~weight,color=~feed,type="box")
+```
+
+## Slide with Plot
+
+```{r echo=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+library(datasets)
+plot_ly(chickwts,y=~weight,color=~feed,type="box")
+```
+
